@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Intro with dropdown nav</title>
+</head>
+<body>
+    
+    <div class="sidenav" id="sidenav">
+       
+        <div class="sidenav-close"><img id="close-img"src="src/images/icon-close-menu.svg"/></div>
+        <div class="sidenav-container">
+           
+            <div class="sidenav-navbar">
+                <ul class="sidenav-navbar__list">
+                    <li id="features">Features <img  id="arrow-features" src="src/images/icon-arrow-down.svg"/>
+                        <ul class="features-list unactive" id="sidenav-features">
+                            <li><img src="src/images/icon-todo.svg"/>   ToDo List</li>
+                            <li><img src="src/images/icon-calendar.svg"/>   Calendar</li>
+                            <li><img src="src/images/icon-reminders.svg"/>   Reminders</li>
+                            <li><img src="src/images/icon-planning.svg"/>   Planning</li>
+                                </ul>
+                    </li>
+                
+                <li id="company">Company <img src="src/images/icon-arrow-down.svg" id="arrow-company"/>
+                    <ul class="company-list unactive" id="sidenav-company">
+                        <li>History</li>
+                        <li>Our team</li>
+                        <li>Blog</li>
+                    </ul>
+                </li>
+                <li>Careers</li>
+                <li>About</li>
+                </ul>
+            </div>
+            <div class="sidenav-login">
+                <ul class="sidenav-login__list">
+                    <li>Login</li>
+                    <li>Register</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="overlay"></div>
+    <header class="header">
+<div class="header-container">
+    <div class="header-container__menu">
+        <div class="menu-logo"><img src="src/images/logo.svg"/></div>
+        <div class="menu-navbar">
+            <ul class="menu-navbar__list">
+                <li id="features">Features <img id="arrow-features" src="src/images/icon-arrow-down.svg"/></li>
+                
+                <li id="company">Company <img id="arrow-company" src="src/images/icon-arrow-down.svg"/></li>
+                <li>Careers</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-container__login">
+        <ul class="login-list">
+            <li>Login</li>
+            <li>Register</li>
+        </ul>
+    </div>
+    <div class="header-container__media">
+        <img id="open-menu"src="src/images/icon-menu.svg"/>
+    </div>
+    <div class="header-container__features unactive" id="features-list">
+        <ul class="features-list">
+<li><img src="src/images/icon-todo.svg"/>   ToDo List</li>
+<li><img src="src/images/icon-calendar.svg"/>   Calendar</li>
+<li><img src="src/images/icon-reminders.svg"/>   Reminders</li>
+<li><img src="src/images/icon-planning.svg"/>   Planning</li>
+    </ul>
+</div>
+<div class="header-container__company unactive" id="company-list">
+    <ul class="company-list">
+        <li>History</li>
+        <li>Our team</li>
+        <li>Blog</li>
+    </ul>
+</div>
+</div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <div class="main-container__text">
+                <div class="text-heading">
+                    <h1>Make remote work</h1>
+
+                </div>
+                <div class="text-paragraph">
+                    <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                </div>
+                <div class="text-button">
+                    <button class="btn">Learn more</button>
+                </div>
+                <div class="text-links">
+                    <ul class="text-links__list">
+                        <li><img src="src/images/client-databiz.svg"/></li>
+                        <li><img src="src/images/client-audiophile.svg"/></li>
+                        <li><img src="src/images/client-meet.svg"/></li>
+                        <li><img src="src/images/client-maker.svg"/></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-container__pic">
+                <img src="src/images/image-hero-desktop.png" class="pic-desktop"/>
+                <img src="src/images/image-hero-mobile.png" class="pic-mobile"/>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
